@@ -1,0 +1,101 @@
+:root {
+  --radius: 1.25rem;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+/* offset for sticky navbar */
+#about, #work, #projects, #contact {
+  scroll-margin-top: 90px;
+}
+
+.section-alt {
+  background: rgba(13, 110, 253, 0.03);
+}
+
+.hero {
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(13,110,253,0.12), transparent 60%),
+              radial-gradient(900px 500px at 90% 20%, rgba(25,135,84,0.10), transparent 55%);
+}
+
+.glass-nav {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.profile-card {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.bg-soft {
+  background: rgba(13, 110, 253, 0.06);
+}
+
+.accent {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+}
+
+.pill {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+  background: rgba(255,255,255,0.65);
+}
+
+.letterspace {
+  letter-spacing: 0.12em;
+}
+
+.carousel-snap {
+  min-height: 220px;
+  display: grid;
+  align-content: center;
+  background: linear-gradient(135deg, rgba(13,110,253,0.12), rgba(25,135,84,0.10));
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0.5rem;
+  z-index: 9999;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+.skip-link:focus {
+  left: 0.5rem;
+}
+
+/* Better focus outline */
+:focus-visible {
+  outline: 3px solid rgba(13,110,253,0.55);
+  outline-offset: 2px;
+}
+
+/* Dark mode tweaks */
+[data-bs-theme="dark"] .glass-nav {
+  background: rgba(33,37,41,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+[data-bs-theme="dark"] .profile-card,
+[data-bs-theme="dark"] .pill {
+  background: rgba(33,37,41,0.6);
+  border-color: rgba(255,255,255,0.12);
+}
+
+

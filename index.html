@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Tin Le personal portfolio website" />
+  <title>Tin Le | Portfolio</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-body" data-bs-theme="light">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="navbar navbar-expand-lg sticky-top glass-nav" aria-label="Primary navigation">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="#home">Tin Le</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Previous Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-outline-primary btn-sm" type="button" aria-pressed="false">
+              Toggle theme
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <p class="text-uppercase letterspace text-muted mb-2">Professional Portfolio</p>
+          <h1 class="display-5 fw-bold mb-3">
+            Hi, I’m <span class="accent">Tin Le</span>.
+          </h1>
+          <p class="lead text-secondary mb-4">
+            I’m a Computer Science student at Portland State University who enjoys building clean, responsive web
+            interfaces and solving challenging algorithmic problems in C++ and JavaScript.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline-secondary" href="#contact">Contact Me</a>
+            <a class="btn btn-outline-secondary" href="#work">Experience</a>
+          </div>
+
+          <div class="mt-4 d-flex flex-wrap gap-2 small text-secondary">
+            <span class="pill">Portland, OR</span>
+            <span class="pill">Open to internships</span>
+            <span class="pill">C++ • JavaScript • SQL</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="profile-card p-3">
+            <div class="ratio ratio-1x1 rounded-4 overflow-hidden bg-soft">
+              <svg viewBox="0 0 120 120" role="img" aria-label="Profile image placeholder" class="w-100 h-100">
+                <defs>
+                  <linearGradient id="g" x1="0" x2="1">
+                    <stop offset="0" stop-color="currentColor" stop-opacity="0.15"></stop>
+                    <stop offset="1" stop-color="currentColor" stop-opacity="0.05"></stop>
+                  </linearGradient>
+                </defs>
+                <rect width="120" height="120" fill="url(#g)"></rect>
+                <circle cx="60" cy="48" r="18" fill="currentColor" opacity="0.25"></circle>
+                <rect x="26" y="74" width="68" height="30" rx="15" fill="currentColor" opacity="0.18"></rect>
+              </svg>
+            </div>
+
+            <div class="mt-3">
+              <p class="mb-1 fw-semibold">Quick links</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/tinle2" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="#" target="_blank" rel="noreferrer">
+                  LinkedIn
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="#contact">Email</a>
+              </div>
+              <p class="mt-3 mb-0 small text-secondary">
+                Connect with me or reach out about internship and project opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-lg-5">
+            <h2 class="h1 fw-bold">About</h2>
+            <p class="text-secondary">
+              I am Tin Le, a Computer Science student at Portland State University with a strong interest in software
+              engineering and web development. I enjoy working with modern C++, JavaScript, and SQL, and I like turning
+              ideas into real applications that are fast, accessible, and easy to use.
+            </p>
+            <p class="text-secondary">
+              I am currently looking for opportunities where I can contribute to real projects, collaborate with a team,
+              and continue improving my skills through hands-on experience.
+            </p>
+
+            <div class="card border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <p class="mb-2 fw-semibold">Highlights</p>
+                <ul class="mb-0 text-secondary">
+                  <li>Comfortable with C++, JavaScript (ES6+), and Git/GitHub</li>
+                  <li>Experience building responsive web pages with HTML, CSS, and Bootstrap</li>
+                  <li>Strong problem-solving skills from algorithmic programming practice</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <div class="accordion rounded-4 overflow-hidden shadow-sm" id="aboutAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="h1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#c1"
+                          aria-expanded="true" aria-controls="c1">
+                    Technical Skills
+                  </button>
+                </h3>
+                <div id="c1" class="accordion-collapse collapse show" aria-labelledby="h1" data-bs-parent="#aboutAccordion">
+                  <div class="accordion-body text-secondary">
+                    C++, JavaScript (ES6+), HTML, CSS, Bootstrap, Git, GitHub, basic SQL, and experience working with Linux and VS Code.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="h2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2"
+                          aria-expanded="false" aria-controls="c2">
+                    What I’m Looking For
+                  </button>
+                </h3>
+                <div id="c2" class="accordion-collapse collapse" aria-labelledby="h2" data-bs-parent="#aboutAccordion">
+                  <div class="accordion-body text-secondary">
+                    Internship or entry-level roles where I can work on web applications, backend services, or tools that improve user experience and developer productivity.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="h3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3"
+                          aria-expanded="false" aria-controls="c3">
+                    Outside of Code
+                  </button>
+                </h3>
+                <div id="c3" class="accordion-collapse collapse" aria-labelledby="h3" data-bs-parent="#aboutAccordion">
+                  <div class="accordion-body text-secondary">
+                    I enjoy solving programming contest problems, learning new developer tools, and finding ways to make workflows faster and more efficient.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-3 small text-secondary">
+              This section uses an accordion to organize more detailed information about my background and goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-2 mb-3">
+          <div>
+            <h2 class="h1 fw-bold mb-1">Previous Work</h2>
+            <p class="text-secondary mb-0">Experience, coursework, and skills that support my work as a developer.</p>
+          </div>
+          <a class="btn btn-outline-secondary btn-sm" href="#" aria-label="Download resume">
+            Resume
+          </a>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow-sm rounded-4 h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold">Experience</h3>
+                <p class="text-secondary mb-2">
+                  Coursework projects and independent practice
+                </p>
+                <ul class="text-secondary mb-0">
+                  <li>Implemented small web applications using HTML, CSS, JavaScript, and Bootstrap</li>
+                  <li>Practiced version control using Git and GitHub for personal projects</li>
+                  <li>Developed strong debugging and problem-solving habits through regular coding practice</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="card border-0 shadow-sm rounded-4 h-100">
+              <div class="card-body">
+                <h3 class="h5 fw-semibold">Relevant Coursework</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge text-bg-secondary">Web Development</span>
+                  <span class="badge text-bg-secondary">Data Structures and Algorithms</span>
+                  <span class="badge text-bg-secondary">Programming in C++</span>
+                  <span class="badge text-bg-secondary">Database Fundamentals</span>
+                </div>
+                <p class="mt-3 text-secondary mb-0">
+                  These courses helped me build a strong foundation in programming, problem solving, and software design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-2 mb-3">
+          <div>
+            <h2 class="h1 fw-bold mb-1">Projects</h2>
+            <p class="text-secondary mb-0">A few projects that show how I work and what I like to build.</p>
+          </div>
+
+          <div class="d-flex gap-2 align-items-center">
+            <label for="projectFilter" class="visually-hidden">Filter projects</label>
+            <select id="projectFilter" class="form-select form-select-sm" style="width: 220px;">
+              <option value="all" selected>All projects</option>
+              <option value="web">Web</option>
+              <option value="data">Data</option>
+              <option value="systems">Systems</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="projectGrid" class="row g-3"></div>
+
+        <div class="mt-5">
+          <h3 class="h4 fw-semibold mb-3">Project snapshots</h3>
+          <div id="projectCarousel" class="carousel slide shadow-sm rounded-4 overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-snap p-4">
+                  <h4 class="h5 fw-semibold">Snapshot 1</h4>
+                  <p class="text-secondary mb-0">Highlight of a user interface or feature that I am proud of.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-snap p-4">
+                  <h4 class="h5 fw-semibold">Snapshot 2</h4>
+                  <p class="text-secondary mb-0">Short description of another project or UI screen.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-snap p-4">
+                  <h4 class="h5 fw-semibold">Snapshot 3</h4>
+                  <p class="text-secondary mb-0">An example of data, charts, or code results from my work.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <p class="mt-2 small text-secondary">
+            The carousel gives a quick visual overview of the projects and features on this page.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-lg-5">
+            <h2 class="h1 fw-bold">Contact</h2>
+            <p class="text-secondary">
+              If you would like to connect, collaborate, or talk about opportunities, feel free to reach out using this form
+              or by email. On GitHub Pages this form does not send a real email, but it validates your input and stores the
+              message locally as a demo.
+            </p>
+
+            <div class="card border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <p class="mb-1 fw-semibold">Alternative contact</p>
+                <p class="mb-0 text-secondary">
+                  Email:
+                  <a href="mailto:its.tin.le2@gmail.com">its.tin.le2@gmail.com</a><br />
+                  GitHub:
+                  <a href="https://github.com/tinle2" target="_blank" rel="noreferrer">tinle2</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <div class="card border-0 shadow-sm rounded-4">
+              <div class="card-body">
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                      <label for="name" class="form-label">Name</label>
+                      <input id="name" name="name" class="form-control" autocomplete="name" required />
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input id="email" name="email" type="email" class="form-control" autocomplete="email" required />
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="subject" class="form-label">Subject</label>
+                      <input id="subject" name="subject" class="form-control" minlength="3" required />
+                      <div class="invalid-feedback">Subject should be at least 3 characters.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" name="message" class="form-control" rows="5" minlength="10" required></textarea>
+                      <div class="invalid-feedback">Message should be at least 10 characters.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input id="consent" name="consent" class="form-check-input" type="checkbox" required />
+                        <label class="form-check-label" for="consent">
+                          I understand this is a demo contact form and no real email is sent.
+                        </label>
+                        <div class="invalid-feedback">Please check the box to continue.</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 d-flex flex-wrap gap-2 align-items-center">
+                      <button class="btn btn-primary" type="submit">Send message</button>
+                      <button id="fillDemo" class="btn btn-outline-secondary" type="button">Fill demo</button>
+                      <span id="formStatus" class="small text-secondary" role="status" aria-live="polite"></span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <strong class="me-auto">Message saved</strong>
+                  <small>Just now</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Thanks for reaching out. Your message was validated and stored locally in this demo.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <p class="mb-0 small text-secondary">© <span id="year"></span> Tin Le</p>
+      <p class="mb-0 small text-secondary">Built with HTML, CSS, JavaScript, and Bootstrap</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
+

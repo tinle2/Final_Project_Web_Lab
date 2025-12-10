@@ -29,27 +29,27 @@
 
   const projects = [
     {
-      title: "Responsive Portfolio Layout",
+      title: "Personal Portfolio Website",
       tag: "web",
       description:
-        "A responsive single-page portfolio built with HTML, CSS, Bootstrap, and JavaScript to showcase my work.",
-      github: "https://github.com/tinle2",
-      demo: ""
+        "A responsive single-page portfolio built with HTML, CSS, JavaScript, and Bootstrap to highlight my background and projects.",
+      github: "https://github.com/tinle2/Final_Project_Web_Lab",
+      demo: "https://tinle2.github.io/Final_Project_Web_Lab/"
     },
     {
-      title: "Algorithm Practice Collection",
+      title: "C++ Algorithm Practice",
       tag: "systems",
       description:
-        "A collection of C++ solutions to competitive programming and algorithm problems, focused on performance and clarity.",
-      github: "https://github.com/tinle2",
+        "A collection of C++ implementations for competitive programming and algorithm problems, focused on performance and clean style.",
+      github: "https://github.com/tinle2/cpp-algorithms",
       demo: ""
     },
     {
-      title: "Data Exploration Notebook",
+      title: "Data Exploration Notes",
       tag: "data",
       description:
-        "An exploratory project where I analyze datasets, practice SQL-style thinking, and visualize basic trends.",
-      github: "https://github.com/tinle2",
+        "Notes and code where I explore datasets, try out queries, and practice thinking in SQL and data analysis.",
+      github: "https://github.com/tinle2/data-notes",
       demo: ""
     }
   ];

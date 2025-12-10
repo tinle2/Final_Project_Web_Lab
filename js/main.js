@@ -36,17 +36,18 @@
             demo: ""
         },
         {
+            title: "Personal Portfolio Website",
+            tag: "web",
+            description:
+            "A responsive single-page portfolio built with HTML, CSS, JavaScript, and Bootstrap to highlight my background and projects.",
+            github: "https://github.com/tinle2/Final_Project_Web_Lab",
+            demo: "https://tinle2.github.io/Final_Project_Web_Lab/"
+        },
+        {
             title: "LeetCode Practice",
             tag: "data",
             description: "A continuously growing repository of LeetCode problem solutions in C++. Includes patterns for technical interviews, dynamic programming, greedy strategies, and graph algorithms.",
             github: "https://github.com/tinle2/leetcode",
-            demo: ""
-        },
-        {
-            title: "Web Development Lab Notebook",
-            tag: "web",
-            description: "Frontend experiments and lab exercises built using HTML, CSS, JavaScript, and Bootstrap. Demonstrates UI layouts, DOM manipulation, and client-side interactivity.",
-            github: "https://github.com/tinle2/webdev-lab-notebook",
             demo: ""
         }
     ];
